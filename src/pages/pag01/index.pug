@@ -1,0 +1,68 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+	link(rel="stylesheet", href="style.css")
+
+block body
+	body(prev-hide, next-hide, menu-hide)
+
+		header.wow.up
+			+image('logo.png', 'logo')
+		
+		section.sec1
+			.flex
+				+image('img01.png', 'img left')
+				.boxText.right
+					h1 Significado social da Educação Integral
+					p <b>Contexto histórico da Educação Integral no Brasil</b>
+					p A Educação Integral (EI) no Brasil começou a tomar forma durante o movimento de renovação escolar nas décadas de 1920 e 1930, em grande parte influenciado por pensadores como Anísio Teixeira.
+					
+			.container-accordeon.up
+				.corpbtn
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Quem foi Anísio Teixeira? 
+					.accordeon-texto
+						p Ele foi um defensor do conceito de que a educação não deveria ser um privilégio reservado a poucos, mas um direito de todos, para preparar os indivíduos para a vida cidadã e para a construção de uma cultura democrática. Em um período de grande transformação social e política no país, Teixeira foi pioneiro ao propor que a escola fosse um espaço não apenas de ensino de conteúdos tradicionais, mas de formação integral do ser humano, considerando o desenvolvimento intelectual, físico, emocional e social dos estudantes.
+				.corpbtn
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Pensamento da época
+					.accordeon-texto
+						p Essa visão se alinha com o pensamento progressista da época, que criticava os modelos tradicionais de ensino focados apenas em habilidades técnicas e na memorização de conteúdos, sem considerar o papel da educação na promoção da justiça social e da inclusão. Ao propor a educação como um direito universal, Teixeira defendia que a escola deveria atuar como um espaço de socialização democrática, onde todas as crianças, independentemente de sua origem, pudessem ter acesso ao conhecimento e às práticas que as preparassem para serem cidadãos críticos e participativos em sociedade.
+		
+		section.sec2.up
+			h2 O que é Educação Integral e por que ela<br> é necessária?
+			.flex.up
+				.boxText
+					.boxInteraction
+						.flexButtons
+							button.btn.btn1.open(data-target=".msg1")
+								p 01
+							button.btn.btn2(data-target=".msg2")
+								p 02
+							button.btn.btn3(data-target=".msg3")
+								p 03
+						.boxMessage
+							.msg.msg1
+								p.pTitle Além das fronteiras
+								p Pensar em Educação Integral significa pensar em uma educação que vá além das fronteiras físicas da escola e que tenha como objetivo central o desenvolvimento completo do indivíduo em seus aspectos intelectual, físico, emocional e social. Esse modelo reconhece que a escola não pode estar isolada da comunidade e das diversas realidades que os alunos vivem.
+							.msg.msg2.hide
+								p.pTitle Experiências de aprendizagem
+								p Uma educação integral deve proporcionar experiências de aprendizagem tanto dentro quanto fora da escola, estimulando os estudantes a se engajarem em práticas sociais que envolvam cooperação, solidariedade e reflexão crítica sobre o mundo ao seu redor.
+							.msg.msg3.hide
+								p.pTitle Novas formas de pensar
+								p A Educação Integral busca desenvolver novas formas de pensar, valores e atitudes que ajudem a formar cidadãos conscientes e ativos em suas comunidades. Isso é particularmente relevante em contextos de maior vulnerabilidade social, onde as crianças e os adolescentes enfrentam desafios como a fome, o medo, e a incerteza quanto ao futuro.
+				+image('img02.png', 'img right')
+					
+		//- section.sec3
+			.box.up
+				p Que este material possa inspirar práticas educativas integradas e unificadas no propósito de inovar socialmente e transformar vidas!
+		
+		//- footer.up
+			+image('logo-footer.png', 'imgFooter')
+
+block scripts
+	script(src="script.js")
