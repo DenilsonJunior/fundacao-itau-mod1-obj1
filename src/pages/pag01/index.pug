@@ -36,26 +36,34 @@ block body
 		section.sec2.up
 			h2 O que é Educação Integral e por que ela<br> é necessária?
 			.flex.up
-				.boxText
-					.boxInteraction
-						.flexButtons
-							button.btn.btn1.open(data-target=".msg1")
-								p 01
-							button.btn.btn2(data-target=".msg2")
-								p 02
-							button.btn.btn3(data-target=".msg3")
-								p 03
-						.boxMessage
-							.msg.msg1
-								p.pTitle Além das fronteiras
-								p Pensar em Educação Integral significa pensar em uma educação que vá além das fronteiras físicas da escola e que tenha como objetivo central o desenvolvimento completo do indivíduo em seus aspectos intelectual, físico, emocional e social. Esse modelo reconhece que a escola não pode estar isolada da comunidade e das diversas realidades que os alunos vivem.
-							.msg.msg2.hide
-								p.pTitle Experiências de aprendizagem
-								p Uma educação integral deve proporcionar experiências de aprendizagem tanto dentro quanto fora da escola, estimulando os estudantes a se engajarem em práticas sociais que envolvam cooperação, solidariedade e reflexão crítica sobre o mundo ao seu redor.
-							.msg.msg3.hide
-								p.pTitle Novas formas de pensar
-								p A Educação Integral busca desenvolver novas formas de pensar, valores e atitudes que ajudem a formar cidadãos conscientes e ativos em suas comunidades. Isso é particularmente relevante em contextos de maior vulnerabilidade social, onde as crianças e os adolescentes enfrentam desafios como a fome, o medo, e a incerteza quanto ao futuro.
-				+image('img02.png', 'img right')
+				+aba([
+					{
+						nameAba: '01',
+						html: `
+						<p class="pTitle">Além das fronteiras</p>
+						<p>Pensar em Educação Integral significa pensar em uma educação que vá além das fronteiras físicas da escola e que tenha como objetivo central o desenvolvimento completo do indivíduo em seus aspectos intelectual, físico, emocional e social. Esse modelo reconhece que a escola não pode estar isolada da comunidade e das diversas realidades que os alunos vivem.</p>
+						`,
+						img: 'img02.png'
+					},
+					{
+						nameAba: '02',
+						html: `
+						<p class="pTitle">Experiências de aprendizagem</p>
+						<p>Uma educação integral deve proporcionar experiências de aprendizagem tanto dentro quanto fora da escola, estimulando os estudantes a se engajarem em práticas sociais que envolvam cooperação, solidariedade e reflexão crítica sobre o mundo ao seu redor.</p>
+						`,
+						img: 'img02.png'
+					},
+					{
+						nameAba: '03',
+						html: `
+						<p class="pTitle">Novas formas de pensar</p>
+						<p>A Educação Integral busca desenvolver novas formas de pensar, valores e atitudes que ajudem a formar cidadãos conscientes e ativos em suas comunidades. Isso é particularmente relevante em contextos de maior vulnerabilidade social, onde as crianças e os adolescentes enfrentam desafios como a fome, o medo, e a incerteza quanto ao futuro.</p>
+						`,
+						img: 'img02.png'
+					},
+				])
+
+
 					
 		//- section.sec3
 			.box.up

@@ -121,3 +121,72 @@ body {
 
 	}
 }
+
+
+// Mixin de Aba
+
+.abasMixin {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+
+	.boxInteraction {
+		position: relative;
+		width: 34em;
+
+		.flexButtons {
+			margin-bottom: -1rem;
+
+			.btn {
+				background-color: #DF9428;
+				width: 6rem;
+				height: 4.5rem;
+				border-radius: .5rem .5rem 0 0;
+				padding-bottom: 1rem;
+
+				p {
+					font-weight: bold;
+					color: #053A57;
+				}
+
+				&.open {
+					background-color: #ffffff;
+				}
+			}
+		}
+
+		.boxMessage {
+			position: relative;
+			z-index: 1;
+			background-color: #FDC83E;
+			border-radius: .5rem;
+			padding: 2rem 1rem;
+			overflow: hidden;
+
+			.pTitle {
+				font-size: 1rem;
+				font-weight: 500;
+			}
+
+			p {
+				font-size: .85rem;
+			}
+
+			p+p {
+				margin-top: 1rem;
+			}
+		}
+	}
+
+	.boxImg {
+		position: relative;
+		width: 18.2rem;
+
+		img {
+			width: 100%;
+		}
+	}
+}
