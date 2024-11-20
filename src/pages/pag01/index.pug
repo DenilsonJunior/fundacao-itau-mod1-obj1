@@ -9,8 +9,8 @@ block body
 		header.wow.up
 			+image('logo.png', 'logo')
 		
-		section.sec1
-			.flex
+		section.sec1.up
+			.flex.up
 				+image('img01.png', 'img left')
 				.boxText.right
 					h1 Significado social da Educação Integral
@@ -43,7 +43,7 @@ block body
 						<p class="pTitle">Além das fronteiras</p>
 						<p>Pensar em Educação Integral significa pensar em uma educação que vá além das fronteiras físicas da escola e que tenha como objetivo central o desenvolvimento completo do indivíduo em seus aspectos intelectual, físico, emocional e social. Esse modelo reconhece que a escola não pode estar isolada da comunidade e das diversas realidades que os alunos vivem.</p>
 						`,
-						img: 'img02.png'
+						img: 'aba1.png'
 					},
 					{
 						nameAba: '02',
@@ -51,7 +51,7 @@ block body
 						<p class="pTitle">Experiências de aprendizagem</p>
 						<p>Uma educação integral deve proporcionar experiências de aprendizagem tanto dentro quanto fora da escola, estimulando os estudantes a se engajarem em práticas sociais que envolvam cooperação, solidariedade e reflexão crítica sobre o mundo ao seu redor.</p>
 						`,
-						img: 'img02.png'
+						img: 'aba2.png'
 					},
 					{
 						nameAba: '03',
@@ -59,17 +59,132 @@ block body
 						<p class="pTitle">Novas formas de pensar</p>
 						<p>A Educação Integral busca desenvolver novas formas de pensar, valores e atitudes que ajudem a formar cidadãos conscientes e ativos em suas comunidades. Isso é particularmente relevante em contextos de maior vulnerabilidade social, onde as crianças e os adolescentes enfrentam desafios como a fome, o medo, e a incerteza quanto ao futuro.</p>
 						`,
-						img: 'img02.png'
+						img: 'aba3.png'
 					},
 				])
 
-
-					
-		//- section.sec3
-			.box.up
-				p Que este material possa inspirar práticas educativas integradas e unificadas no propósito de inovar socialmente e transformar vidas!
+		section.sec3.up
+			.box.zoomIn
+				p A escola, nesse cenário, assume um papel vital ao proporcionar um ambiente que ofereça segurança, dignidade e esperança, promovendo, simultaneamente, a educação e a socialização. Como Arroyo (2012) aponta, a educação precisa ser sensível às condições de vida dos estudantes e buscar formas de ajudá-los a se humanizar e a se desenvolver plenamente, mesmo diante de adversidades.
 		
-		//- footer.up
+		section.sec4.up
+			+image('sec3.png', 'img left')
+			.boxText.right
+				h1 Desafios e perspectivas para a Educação Integral
+				p A Educação Integral apresenta desafios importantes, especialmente no que diz respeito à implementação de práticas pedagógicas que realmente contemplem todas as dimensões do ser humano.
+				p Para que isso aconteça, é necessário que as escolas e os sistemas educacionais adotem metodologias que incentivem a participação ativa de todos os envolvidos no processo de ensino-aprendizagem — professores, gestores, alunos, famílias e comunidades. Isso exige a construção de um projeto político-pedagógico que seja participativo e colaborativo, onde as práticas educativas sejam constantemente refletidas e ajustadas para atender às necessidades de cada contexto específico.
+		
+		section.sec5.up
+			.boxText.left
+				p Essas práticas pedagógicas devem estar ancoradas em valores democráticos, promovendo a cooperação, a solidariedade e o respeito às diferentes formas de viver e aprender. Isso é especialmente relevante quando falamos de uma educação que pretende ser inclusiva e capaz de promover a cidadania ativa.
+				p A Educação Integral visa não apenas formar indivíduos capazes de atuar em suas comunidades, mas também promover transformações sociais mais amplas, que reduzam as desigualdades e valorizem a diversidade.
+			+image('sec5.png', 'img right')
+		
+		section.sec6.up
+			h1 Marco legal e a concepção curricular da educação integral
+			p O arcabouço legal que sustenta a Educação Integral no Brasil é amplo e sólido. 
+			p <b>Veja abaixo mais detalhes, clicando nos botões:</b> 
+			.flex
+				.flexButton.up(data-modal="#pop1")
+					.boxIco
+						+image('abragencia.svg', 'ico')
+					button.button
+						p Abrangência
+				.flexButton.up(data-modal="#pop2")
+					.boxIco
+						+image('direito.svg', 'ico')
+					button.button
+						p Direitos
+				.flexButton.up(data-modal="#pop3")
+					.boxIco
+						+image('curriculo.svg', 'ico')
+					button.button
+						p Currículo
+		
+		#pop1.modalBase
+			.flexModal
+				//- +image('img05.png', 'img')
+				.boxText
+					button.modal-close
+						+image('close.png', 'ico')
+					p Esse arcabouço legal abrange a Constituição Federal de 1988, as Leis de Diretrizes e Bases da Educação Nacional (LDB) e o Plano Nacional de Educação (PNE), entre outros documentos importantes. 
+		
+		#pop2.modalBase
+			.flexModal
+				//- +image('img05.png', 'img')
+				.boxText
+					button.modal-close
+						+image('close.png', 'ico')
+					p Esses textos não apenas garantem o direito à educação, mas estabelecem princípios e diretrizes para que essa educação seja inclusiva, universal e voltada para a formação integral dos estudantes. 
+					p Nesse sentido, a Educação Integral se coloca como uma política pública estratégica para promover a equidade educacional e o desenvolvimento humano integral.
+		
+		#pop3.modalBase
+			.flexModal
+				//- +image('img05.png', 'img')
+				.boxText
+					button.modal-close
+						+image('close.png', 'ico')
+					p O currículo da Educação Integral é compreendido como o conjunto de práticas e valores que proporcionam a produção e socialização de significados no espaço social, contribuindo para a construção das identidades sociais e culturais dos estudantes. 
+		
+		section.sec7.up
+			.box.zoomIn
+				p Mais do que a simples transmissão de conhecimentos, o currículo da Educação Integral deve promover valores fundamentais como o interesse social, os direitos e deveres dos cidadãos e o respeito à ordem democrática. Isso implica uma educação que não se limita às disciplinas tradicionais, mas que incorpora práticas educativas formais e não-formais, promovendo a formação de cidadãos críticos e engajados.
+		
+		section.sec8.up
+			h2 Estratégias para implementação e o papel <br>da intersetorialidade
+			p Veja na interação abaixo algumas dessas estratégias: 
+			.flex.up
+				+aba([
+					{
+						nameAba: '01',
+						html: `
+						<p class="pTitle">Multidisciplinariedade</p>
+						<p>Para que a Educação Integral seja efetiva, é necessário que as escolas adotem estratégias pedagógicas e metodológicas que considerem a realidade local e as necessidades específicas dos estudantes. Isso inclui a articulação entre diferentes áreas do conhecimento e a promoção de uma educação interdisciplinar e transversal, que envolva toda a comunidade escolar.</p>
+						`,
+						img: 'aba1a.png'
+					},
+					{
+						nameAba: '02',
+						html: `
+						<p class="pTitle">Conexão com outras políticas públicas</p>
+						<p>A intersetorialidade, ou seja, a colaboração entre diferentes políticas públicas, é um aspecto central nesse processo. A Educação Integral deve estar conectada a políticas de saúde, assistência social, cultura e esportes, entre outras, para que possa realmente promover o desenvolvimento integral dos estudantes.</p>
+						`,
+						img: 'aba2a.png'
+					},
+					{
+						nameAba: '03',
+						html: `
+						<p class="pTitle">Abordagem integrada</p>
+						<p>A intersetorialidade também é essencial para enfrentar as desigualdades sociais e territoriais que afetam as crianças e adolescentes no Brasil. Questões como a fome, o trabalho infantil e a violência são desafios que exigem uma abordagem integrada, que combine ações educativas com políticas de assistência social e direitos humanos.</p>
+						`,
+						img: 'aba3a.png'
+					},
+					{
+						nameAba: '04',
+						html: `
+						<p class="pTitle">Mapeamento</p>
+						<p>Um exemplo prático de mapeamento da realidade territorial é a realização de diagnósticos participativos que engajem a comunidade acadêmica para a identificação de demandas e planejamento de ações conjuntas.</p>
+						<p>Independentemente do ator que coordena a ação, é possível implantar projetos ou fortalecer programas existentes, a partir dos interesses e demandas da própria comunidade.</p>
+						<p>O Mapa Social, uma tecnologia desenvolvida para mapear as necessidades e falta de proteções sociais em diferentes territórios, é um exemplo prático de como a intersetorialidade pode ser aplicada para melhorar a educação e as condições de vida das populações vulneráveis.</p>
+						`,
+						img: 'aba4a.png'
+					},
+				])
+		
+		section.sec9.up.completeScorm
+			+image('sec9.png', 'img left')
+			.boxText.right
+				h1 Conheça a experiência do Mapa Social
+				p O Mapa Social (Silveira, 2019; Silveira e Braga, 2020; Silveira, 2027; Silveira e Braga, 2020; Silveira e Barbosa, 2023) é uma Tecnologia Social desenvolvida pelo Núcleo de Direitos Humanos e pelo Programa de Pós-Graduação em Direitos Humanos e Políticas Públicas da Pontifícia Universidade Católica do Paraná, que permite identificar o nível de desenvolvimento de um território/cidade, demandas, desproteções sociais, cobertura da rede de serviços, tendências e oportunidades de investimentos públicos e privados, por meio da pesquisa-ação. Assim, a partir de indicadores relacionados com os Objetivos de Desenvolvimento Sustentável, empresas, governos e organizações desenvolvem projetos e políticas públicas com resultados monitorados pela Universidade.
+				p Dentre os resultados sistêmicos obtidos, destaca-se a melhoria no desempenho escolar e socioemocional dos jovens inseridos nos programas implantados a partir de 2017. Outros resultados comunitários a partir do Mapa Social foram fundamentais, como a implantação de uma Unidade de Saúde, integração de linhas de Ónibus, ampliação de pavimentação e Módulo Policial.
+				.containerBtn
+					h2 Acesse o Mapa Social 
+					a.flexButton.up(href="../../assets/pdf/MAPA-SOCIAL-DA-BORDA-DO-CAMPO.pdf" target="_blank")
+						.boxIco
+							+image('book.svg', 'ico')
+						.button
+							p Acessar
+		footer.up
 			+image('logo-footer.png', 'imgFooter')
 
 block scripts
